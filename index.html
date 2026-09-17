@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LEPOS 官方下载</title>
+<meta name="description" content="LEPOS 官方下载页 —— 获取最新版本安装包、更新日志与使用说明。" />
+<meta property="og:title" content="LEPOS 官方下载" />
+<meta property="og:description" content="LEPOS 官方下载页 —— 获取最新版本安装包、更新日志与使用说明。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b1220'/><text x='32' y='45' font-size='38' font-family='Segoe UI,Arial' font-weight='700' fill='%2338bdf8' text-anchor='middle'>L</text></svg>" />
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body id="top">
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="logo">L</span>
+      <span>LEPOS <span class="domain" id="navDomain"></span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">关于</a>
+      <a href="#faq">常见问题</a>
+      <a class="btn-small" id="navDownload" href="#" target="_blank" rel="noopener noreferrer">下载</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- 首屏 + 下载 -->
+  <section class="hero wrap">
+    <span class="badge"><i class="dot"></i><span id="badgeText"></span></span>
+    <h1 id="heroTitle"></h1>
+    <p class="sub" id="heroSub"></p>
+
+    <div class="cta">
+      <!-- 下载按钮上方的小字提示 -->
+      <p class="risk-note" id="riskNote"></p>
+
+      <a class="btn-primary" id="downloadBtn" href="#" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12" /><path d="M7 11l5 5 5-5" /><path d="M4 20h16" />
+        </svg>
+        <span id="btnLabel">下载</span>
+      </a>
+
+      <div class="cta-meta">
+        <span id="dlMeta"></span>
+        <span class="sep">|</span>
+        <button class="btn-ghost" id="copyLink" type="button">复制下载链接</button>
+        <a class="btn-ghost" id="mirrorLink" href="#" target="_blank" rel="noopener noreferrer">备用地址</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section class="block wrap" id="about">
+    <h2 class="block-title" id="aboutTitle"></h2>
+    <p class="block-desc" id="aboutDesc"></p>
+    <div class="cards" id="aboutCards"></div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="block wrap" id="faq">
+    <h2 class="block-title">常见问题</h2>
+    <p class="block-desc">下载与使用过程中最常见的问题。</p>
+    <div id="faqList"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-disclaimer" id="footerDisclaimer"></div>
+    <div class="footer-row">
+      <span id="footerCopyright"></span>
+      <span id="footerContact"></span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="data/site.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
